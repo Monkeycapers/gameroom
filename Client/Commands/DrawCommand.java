@@ -1,6 +1,7 @@
 package Client.Commands;
 
 import Client.GameClient;
+import Client.TronCanvas;
 import Client.showSetupGui;
 import Jesty.Settings;
 import javafx.scene.canvas.GraphicsContext;
@@ -29,7 +30,10 @@ public class DrawCommand extends Command {
         List<Object> render = input.getJSONArray("render").toList();
         int mapWidth = input.getInt("mapwidth") + 2;
         int mapHeight = input.getInt("mapheight") + 2;
-        showSetupGui.render(render, mapWidth, mapHeight);
+        //showSetupGui.render(render, mapWidth, mapHeight);
+
+        ((TronCanvas)(gameClient.canvasFactory.getCanvas(input.getString("name")))).setRenderList(render);
+
 
 //        StringWriter stringWriter = new StringWriter();
 //

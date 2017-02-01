@@ -48,11 +48,36 @@ public class SnakeLobby extends Lobby {
     }
 
     @Override
-    public void onConnect(User user) {}
+    public void onConnect(User user) {
+
+        //Tell the user to create a canvas
+        StringWriter stringWriter = new StringWriter();
+        new JSONWriter(stringWriter).object()
+                .key("argument").value("canvas")
+                .key("type").value("create")
+                .key("width").value(mapWidth)
+                .key("height").value(mapHeight)
+                .key("name").value(name)
+                .endObject();
+        user.clientWorker.sendMessage(stringWriter.toString());
+
+    }
 
     @Override
     public boolean onClose(User user) {
-        return this.user == user;
+        //return this.user == user;
+        if (this.user == user) {
+            //Tell the user to close the canvas
+//            StringWriter stringWriter = new StringWriter();
+//            new JSONWriter(stringWriter).object()
+//                    .key("argument").value("canvas")
+//                    .key("type").value("close")
+//                    .key("name").value(name)
+//                    .endObject();
+//            user.clientWorker.sendMessage(stringWriter.toString());
+            return true;
+        }
+        return false;
     }
 
     @Override
@@ -113,6 +138,7 @@ public class SnakeLobby extends Lobby {
 
     @Override
     public void run() {
+        onConnect(user);
         while (isRunning) {
             long tickTime = System.currentTimeMillis();
 //            System.out.println(tick);

@@ -37,6 +37,7 @@ public class Commands {
         commands.add(new returnOfflineUserListCommand());
         commands.add(new returnUserInfoCommand());
         commands.add(new ImageCommand());
+        commands.add(new CanvasCommand());
     }
 
     public String orchestrateCommand(JSONObject jsonObject) {

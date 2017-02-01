@@ -14,6 +14,8 @@ public class GameClient extends Jesty.TCPBridge.Client {
 
     Commands commands;
 
+    public CanvasFactory canvasFactory;
+
     //Used for gui commands
     //Todo: default value must be false
    // public boolean isHighRank = true;
@@ -21,6 +23,7 @@ public class GameClient extends Jesty.TCPBridge.Client {
     public GameClient(String hostName, int portNumber) {
         super(hostName, portNumber);
         commands = new Commands(this);
+        canvasFactory = new CanvasFactory();
     }
 
     public GameClient() {
