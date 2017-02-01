@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="182.0" layoutY="160.0" text="Tron 2.0">
+         <font>
+            <Font name="Calibri" size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="369.0" text="Evan Jesty" />
+      <Label layoutX="547.0" layoutY="369.0" text="ICS4UR" />
+      <Label layoutX="266.0" layoutY="273.0" text="Connecting..." />
+   </children>
+</AnchorPane>

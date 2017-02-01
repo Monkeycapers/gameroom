@@ -1,0 +1,47 @@
+{'argument':'signin', 'username':'Evan', 'password':'unsec'}
+
+{'argument':'signin', 'username':'bupdude', 'password':'bup'}
+
+{'argument':'signin', 'username':'Evan2', 'password':'unsec'}
+
+
+
+{'argument':'signup', 'username':'Evan2', 'password':'unsec', 'email':'evanjesty@gmail.com'}
+
+{'argument':'stop'}
+
+{'argument':'kick', 'user':'bupdude', 'reason':'Kicked from the server'}
+
+{'argument':'userinfo', 'type':true}
+
+{'argument':'ban', 'user':'Evan2', 'reason':'you're done kiddo'}
+
+{'argument':'promote', 'user':'Evan2', 'rank':'User'}
+
+//Server to client
+
+{'argument':'chatmessage', 'name':'notcurrentlyinused', 'displayname':'aDisplayName', 'message':'AMessage'}
+
+{'argument':'chatmessage', 'name':'notcurrentlyinused1', 'displayname':'Chat room1', 'message':'AMessage'}
+
+{'argument':'chatmessage', 'name':'notcurrentlyinused2', 'displayname':'Chat room2', 'message':'AMessage'}
+
+
+//Create a lobby
+{'argument':'createlobby', 'name':'MyLobby', 'type':'tron', 'maxplayers':10}
+
+//Join a lobby
+{'argument':'joinlobby', 'name':'Evan,MyLobby'}
+
+//Lobbylist command
+{'argument':'lobbylist'}
+
+//Lobby message commands:
+//Key
+{'argument':'lobbymessage', 'type':'key', 'key':'D'}
+
+{'argument':'chatmessage', 'name':'general', 'message':'/snake'}
+
+consoleinput("{'argument':'signin', 'username':'Evan', 'password':'unsec'}")
+
+consoleinput("{'argument':'chatmessage', 'name':'general', 'message':'/snake'}")

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.serverListController">
+   <children>
+      <SplitPane dividerPositions="0.9395203336809176" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TabPane fx:id="chatTabPane" maxHeight="130.0" prefHeight="130.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="398.0" prefWidth="88.0">
+               <children>
+                  <ListView fx:id="userListView" layoutY="-1.0" maxWidth="140.0" prefHeight="400.0" prefWidth="140.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <MenuBar prefHeight="25.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Lobby">
+               <items>
+                  <MenuItem fx:id="lobbyListMenuItem" mnemonicParsing="false" text="Lobby list" />
+                  <MenuItem fx:id="leaveLobbyMenuItem" mnemonicParsing="false" text="Leave lobby" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Commands">
+               <items>
+                  <MenuItem fx:id="signOutMenuItem" mnemonicParsing="false" text="Sign out" />
+                  <MenuItem fx:id="snakeLobbyItem" mnemonicParsing="false" text="Snake" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Actions">
+              <items>
+                <MenuItem fx:id="pmMenuItem" mnemonicParsing="false" text="Pm" />
+                  <MenuItem fx:id="promoteMenuItem" mnemonicParsing="false" text="Promote" />
+                  <MenuItem fx:id="kickMenuItem" mnemonicParsing="false" text="Kick" />
+                  <MenuItem fx:id="banMenuItem" mnemonicParsing="false" text="Ban" />
+                  <MenuItem fx:id="offlineUserAction" mnemonicParsing="false" text="Offline User Action" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

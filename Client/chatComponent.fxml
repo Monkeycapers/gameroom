@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.TextFlow?>
+
+<Tab text="Untitled Tab" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.chatTabController">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" prefHeight="155.0" prefWidth="200.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <TextFlow fx:id="textFlow" />
+               </content>
+            </ScrollPane>
+            <TextField fx:id="chatTextField" layoutX="67.0" layoutY="75.0" prefHeight="27.0" prefWidth="531.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" />
+            <Label fx:id="chatLabel" layoutX="14.0" layoutY="79.0" text="Label" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</Tab>
